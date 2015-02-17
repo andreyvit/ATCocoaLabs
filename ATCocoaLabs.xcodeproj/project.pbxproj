@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43D04DC41A9338B600881EBA /* ATCocoaLabs.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D04DC31A9338B600881EBA /* ATCocoaLabs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43D04DCA1A9338B600881EBA /* ATCocoaLabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D04DBE1A9338B600881EBA /* ATCocoaLabs.framework */; };
-		43D04DD11A9338B600881EBA /* ATCocoaLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D04DD01A9338B600881EBA /* ATCocoaLabsTests.swift */; };
+		43D04E321A933A8100881EBA /* ATCocoaLabs.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D04E311A933A8100881EBA /* ATCocoaLabs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43D04E3B1A933AAB00881EBA /* CocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D04E371A933AAB00881EBA /* CocoaTests.swift */; };
+		43D04E501A933B3000881EBA /* PrecisionReduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D04E4F1A933B3000881EBA /* PrecisionReduction.swift */; };
+		43D04E521A933B3B00881EBA /* PrecisionReductionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D04E511A933B3B00881EBA /* PrecisionReductionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +26,13 @@
 
 /* Begin PBXFileReference section */
 		43D04DBE1A9338B600881EBA /* ATCocoaLabs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ATCocoaLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		43D04DC21A9338B600881EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43D04DC31A9338B600881EBA /* ATCocoaLabs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATCocoaLabs.h; sourceTree = "<group>"; };
 		43D04DC91A9338B600881EBA /* ATCocoaLabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATCocoaLabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43D04DCF1A9338B600881EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43D04DD01A9338B600881EBA /* ATCocoaLabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCocoaLabsTests.swift; sourceTree = "<group>"; };
+		43D04E2F1A933A7600881EBA /* ATCocoaLabs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ATCocoaLabs-Info.plist"; sourceTree = "<group>"; };
+		43D04E311A933A8100881EBA /* ATCocoaLabs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATCocoaLabs.h; sourceTree = "<group>"; };
+		43D04E351A933AAB00881EBA /* ATCocoaLabsTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ATCocoaLabsTests-Info.plist"; sourceTree = "<group>"; };
+		43D04E371A933AAB00881EBA /* CocoaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaTests.swift; sourceTree = "<group>"; };
+		43D04E4F1A933B3000881EBA /* PrecisionReduction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecisionReduction.swift; sourceTree = "<group>"; };
+		43D04E511A933B3B00881EBA /* PrecisionReductionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrecisionReductionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,13 @@
 		43D04DB41A9338B600881EBA = {
 			isa = PBXGroup;
 			children = (
-				43D04DC01A9338B600881EBA /* ATCocoaLabs */,
-				43D04DCD1A9338B600881EBA /* ATCocoaLabsTests */,
+				43D04E311A933A8100881EBA /* ATCocoaLabs.h */,
+				43D04E2F1A933A7600881EBA /* ATCocoaLabs-Info.plist */,
+				43D04E351A933AAB00881EBA /* ATCocoaLabsTests-Info.plist */,
+				43D04E341A933A9700881EBA /* Common */,
+				43D04E381A933AAB00881EBA /* CommonTests */,
+				43D04E331A933A9100881EBA /* Cocoa */,
+				43D04E361A933AAB00881EBA /* CocoaTests */,
 				43D04DBF1A9338B600881EBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,38 +77,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		43D04DC01A9338B600881EBA /* ATCocoaLabs */ = {
+		43D04E331A933A9100881EBA /* Cocoa */ = {
 			isa = PBXGroup;
 			children = (
-				43D04DC31A9338B600881EBA /* ATCocoaLabs.h */,
-				43D04DC11A9338B600881EBA /* Supporting Files */,
 			);
-			path = ATCocoaLabs;
+			path = Cocoa;
 			sourceTree = "<group>";
 		};
-		43D04DC11A9338B600881EBA /* Supporting Files */ = {
+		43D04E341A933A9700881EBA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				43D04DC21A9338B600881EBA /* Info.plist */,
+				43D04E4F1A933B3000881EBA /* PrecisionReduction.swift */,
 			);
-			name = "Supporting Files";
+			path = Common;
 			sourceTree = "<group>";
 		};
-		43D04DCD1A9338B600881EBA /* ATCocoaLabsTests */ = {
+		43D04E361A933AAB00881EBA /* CocoaTests */ = {
 			isa = PBXGroup;
 			children = (
-				43D04DD01A9338B600881EBA /* ATCocoaLabsTests.swift */,
-				43D04DCE1A9338B600881EBA /* Supporting Files */,
+				43D04E371A933AAB00881EBA /* CocoaTests.swift */,
 			);
-			path = ATCocoaLabsTests;
+			path = CocoaTests;
 			sourceTree = "<group>";
 		};
-		43D04DCE1A9338B600881EBA /* Supporting Files */ = {
+		43D04E381A933AAB00881EBA /* CommonTests */ = {
 			isa = PBXGroup;
 			children = (
-				43D04DCF1A9338B600881EBA /* Info.plist */,
+				43D04E511A933B3B00881EBA /* PrecisionReductionTests.swift */,
 			);
-			name = "Supporting Files";
+			path = CommonTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,7 +115,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43D04DC41A9338B600881EBA /* ATCocoaLabs.h in Headers */,
+				43D04E321A933A8100881EBA /* ATCocoaLabs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D04E501A933B3000881EBA /* PrecisionReduction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43D04DD11A9338B600881EBA /* ATCocoaLabsTests.swift in Sources */,
+				43D04E521A933B3B00881EBA /* PrecisionReductionTests.swift in Sources */,
+				43D04E3B1A933AAB00881EBA /* CocoaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,30 +323,33 @@
 		43D04DD51A9338B600881EBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = ATCocoaLabs/Info.plist;
+				INFOPLIST_FILE = "ATCocoaLabs-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		43D04DD61A9338B600881EBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = ATCocoaLabs/Info.plist;
+				INFOPLIST_FILE = "ATCocoaLabs-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,7 +369,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ATCocoaLabsTests/Info.plist;
+				INFOPLIST_FILE = "ATCocoaLabsTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -372,7 +383,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ATCocoaLabsTests/Info.plist;
+				INFOPLIST_FILE = "ATCocoaLabsTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +408,7 @@
 				43D04DD61A9338B600881EBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43D04DD71A9338B600881EBA /* Build configuration list for PBXNativeTarget "ATCocoaLabsTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +417,7 @@
 				43D04DD91A9338B600881EBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
